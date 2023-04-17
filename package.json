@@ -1,0 +1,22 @@
+{
+  "name": "leantechchallenge",
+  "version": "1.0.0",
+  "description": "Technical Challenge from LeanTech",
+  "main": "",
+  "scripts": {
+    "test": "npx cypress run --browser chrome --headed --incognito",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gitrepository.com"
+  },
+  "author": "Ernesto Segura",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  },
+  "dependencies": {
+    "chromedriver": "^112.0.0"
+  }
+}
