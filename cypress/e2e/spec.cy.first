@@ -1,0 +1,16 @@
+import LoginPage from './pageobject/login.page'
+// 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
+
+describe('template spec', () => {
+  beforeEach(() => {
+    cy.clearLocalStorage()
+    cy.clearCookies()
+    cy.visit('/');
+    
+  });
+
+  it("navigates", () => {
+    const loginPage = new LoginPage();
+    cy.title().should('contain','Swag Labs')
+  });
+})
