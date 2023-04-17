@@ -1,0 +1,15 @@
+import LoginPage from './pageobject/login.page'
+
+describe('template spec', () => {
+  beforeEach(() => {
+    cy.clearLocalStorage()
+    cy.clearCookies()
+    cy.visit('/');
+    
+  });
+
+  it("navigates", () => {
+    const loginPage = new LoginPage();
+    cy.title().should('contain','Swag Labs')
+  });
+})
